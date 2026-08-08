@@ -1,4 +1,3 @@
-FROM nginx:alpine
+FROM nginxinc/nginx-unprivileged:alpine
 COPY . /usr/share/nginx/html/
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 8080
