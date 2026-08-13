@@ -1,0 +1,31 @@
+apiVersion: groot.koronet.com/v1alpha1
+kind: GrootApp
+metadata:
+    annotations:
+        groot.koronet.com/description: tx-ops-dashboard Labs app.
+        groot.koronet.com/labs-template: simple-api
+    labels:
+        groot.koronet.com/lane: labs
+        groot.koronet.com/product: labs
+        groot.koronet.com/tier: tier-4-low
+    name: tx-ops-dashboard
+spec:
+    cells:
+        - default: true
+          deployments:
+            - workload: api
+          environment: production
+          name: labs
+          routes:
+            - access:
+                policyRef: tx-ops-dashboard-labs
+                provider: cloudflare-access
+              host: tx-ops-dashboard.koronetlabs.com
+              name: web
+              port: http
+              visibility: edge-protected
+              workload: api
+          target: koronet-labs-us-east-1
+    workloads:
+        - name: api
+          type: api
