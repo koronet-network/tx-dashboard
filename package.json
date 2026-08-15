@@ -1,8 +1,8 @@
 {
-  "name": "tx-ops-dashboard",
+  "name": "tx-dashboard-v3",
   "version": "0.1.0",
   "private": true,
-  "description": "TX Operations Dashboard — Koronet Revenue OS",
+  "description": "TX Dashboard V3 — Chapter TX wholesaler portfolio",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs"

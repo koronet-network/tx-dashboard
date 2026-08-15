@@ -2,7 +2,7 @@ import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const appName = "tx-ops-dashboard";
+const appName = "tx-dashboard-v3";
 const outputPath = "dist";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = path.join(root, "public");

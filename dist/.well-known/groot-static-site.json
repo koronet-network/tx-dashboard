@@ -1,0 +1,7 @@
+{
+  "app": "tx-dashboard-v3",
+  "template": "static-site",
+  "outputPath": "dist",
+  "spaFallback": false,
+  "generatedAt": "2026-08-15T01:53:37.504Z"
+}
