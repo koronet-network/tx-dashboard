@@ -2,13 +2,13 @@ apiVersion: groot.koronet.com/v1alpha1
 kind: GrootApp
 metadata:
     annotations:
-        groot.koronet.com/description: TX Dashboard V3 — Chapter TX wholesaler portfolio
+        groot.koronet.com/description: TX Portfolio — Chapter TX wholesaler dashboard
         groot.koronet.com/labs-template: static-site
     labels:
         groot.koronet.com/lane: labs
         groot.koronet.com/product: labs
         groot.koronet.com/tier: tier-4-low
-    name: tx-dashboard-v3
+    name: tx-portfolio
 spec:
     cells:
         - default: true
@@ -18,9 +18,9 @@ spec:
           name: labs
           routes:
             - access:
-                policyRef: tx-dashboard-v3-labs
+                policyRef: tx-portfolio-labs
                 provider: cloudflare-access
-              host: tx-dashboard-v3.koronetlabs.com
+              host: tx-portfolio.koronetlabs.com
               name: web
               port: http
               visibility: edge-protected

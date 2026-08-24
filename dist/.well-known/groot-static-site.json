@@ -1,7 +1,7 @@
 {
-  "app": "tx-dashboard-v3",
+  "app": "tx-portfolio",
   "template": "static-site",
   "outputPath": "dist",
   "spaFallback": false,
-  "generatedAt": "2026-08-24T16:40:13.523Z"
+  "generatedAt": "2026-08-24T16:54:03.359Z"
 }
