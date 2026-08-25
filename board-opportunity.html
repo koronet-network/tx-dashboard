@@ -172,7 +172,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
   <div>
     <p class="eyebrow">TX Revenue OS · Board Opportunity Dashboard</p>
     <h1>Board Opportunity Dashboard <span style="font-size:18px;color:var(--muted);font-weight:400">v4</span></h1>
-    <p class="sub">L12 macro TX performance · Ecosystem layers · Deep dives · Wholesaler matrix (335 accounts) · Opportunity sizing · Pipeline view. Organic Snowflake data only — Axerrio reported separately.</p>
+    <p class="sub">L12 macro TX performance · Ecosystem layers · Deep dives · Wholesaler matrix (453 accounts · 46% TAM) · Opportunity sizing · Pipeline view. Organic Snowflake data only — Axerrio reported separately.</p>
   </div>
   <div style="text-align:right;flex-shrink:0">
     <span class="badge live">LIVE DATA</span>
@@ -188,8 +188,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
     <button class="tab-btn" onclick="switchTab('deep-dives',this)">3 · Deep Dives</button>
     <button class="tab-btn" onclick="switchTab('matrix',this)">4 · Matrix</button>
     <button class="tab-btn" onclick="switchTab('opp-sizing',this)" style="color:var(--purple);font-weight:900">5 · Opportunity Sizing ★</button>
-    <button class="tab-btn" onclick="switchTab('pipeline',this)">6 · Pipeline & Tracking</button>
-    <button class="tab-btn" onclick="switchTab('pipeline',this)" style="color:var(--green);font-weight:900">6 · Pipeline ★ NEW</button>
+    <button class="tab-btn" onclick="switchTab('pipeline',this)" style="color:var(--green);font-weight:900">6 · Pipeline ★</button>
   </div>
 
 
@@ -272,10 +271,10 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
     <h2>Layer-by-Layer Performance</h2>
     <p class="sub">Sell-side GMV and fees by industry layer. Buy-side GMV via Procurement. Channel definitions per channels.json (Sofia Pardo).</p>
     <div class="grid4" style="margin:14px 0">
-      <div class="card okLine" style="text-align:center"><small>Wholesalers in Spine</small><strong style="font-size:22px">332</strong><p>132 Client · 189 Prospect · 10 Pre-live · 1 Churned</p></div>
-      <div class="card blueLine" style="text-align:center"><small>Importers in Spine</small><strong style="font-size:22px">153</strong><p>132 Client · 14 Prospect · 7 Pre-live</p></div>
-      <div class="card goldLine" style="text-align:center"><small>Growers in Spine</small><strong style="font-size:22px">68</strong><p>39 Client · 17 Prospect · 12 Pre-live</p></div>
-      <div class="card purpleLine" style="text-align:center"><small>Total Spine (accounts_clean)</small><strong style="font-size:22px">566</strong><p>WS TAM coverage: 34% (332/977)</p></div>
+      <div class="card okLine" style="text-align:center"><small>Wholesalers in Spine</small><strong style="font-size:22px">453</strong><p>134 Client · 307 Prospect · 10 Pre-live · 2 Churned</p></div>
+      <div class="card blueLine" style="text-align:center"><small>Importers in Spine</small><strong style="font-size:22px">150</strong><p>Floral importers across layers</p></div>
+      <div class="card goldLine" style="text-align:center"><small>Growers in Spine</small><strong style="font-size:22px">65</strong><p>Farm-side suppliers</p></div>
+      <div class="card purpleLine" style="text-align:center"><small>Total Spine (accounts_clean)</small><strong style="font-size:22px">684</strong><p>WS TAM coverage: 46% (453/977)</p></div>
     </div>
     <div class="toggle-bar">
       <span style="font-size:12px;font-weight:700;color:var(--muted)">FILTER:</span>
@@ -344,37 +343,37 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
   </div>
 
 
-  <!-- TAB 4: MATRIX (updated spine) -->
+  <!-- TAB 4: MATRIX (updated spine — Codex v2) -->
   <div id="tab-matrix" class="tab-pane">
   <div class="tab-content">
-    <p class="eyebrow">Account Potential Matrix · All Layers · accounts_clean.json (566 accounts)</p>
+    <p class="eyebrow">Account Potential Matrix · All Layers · accounts_clean.json (684 accounts) · Codex v2 Aug 2026</p>
     <h2>Account Potential Matrix</h2>
-    <p class="sub">Product tier × GMV band × account class, by ecosystem layer. Source: accounts_clean.json (566 total accounts, 2026-08-18). TAM coverage: 335 wholesalers of ~977 identified (34%).</p>
+    <p class="sub">Product tier × GMV band × account class, by ecosystem layer. Source: accounts_clean.json (684 total accounts, 2026-08-18). TAM coverage: 453 wholesalers of ~977 identified (46%).</p>
     <div class="grid3" style="margin:12px 0">
       <div class="card okLine" style="text-align:center">
         <small>Wholesalers</small>
-        <strong style="font-size:20px">332</strong>
-        <p>132 Client · 189 Prospect · 10 Pre-live · 1 Churned</p>
-        <p style="margin-top:4px;font-size:11px;color:var(--green)">+123 Codex-enriched prospects added</p>
+        <strong style="font-size:20px">453</strong>
+        <p>134 Client · 307 Prospect · 10 Pre-live · 2 Churned</p>
+        <p style="margin-top:4px;font-size:11px;color:var(--green)">+121 Codex v2 batch added vs prior spine</p>
       </div>
       <div class="card blueLine" style="text-align:center">
         <small>Importers</small>
-        <strong style="font-size:20px">153</strong>
-        <p>132 Client · 14 Prospect · 7 Pre-live · 0 Churned</p>
+        <strong style="font-size:20px">150</strong>
+        <p>Floral importers across layers</p>
       </div>
       <div class="card goldLine" style="text-align:center">
         <small>Growers</small>
-        <strong style="font-size:20px">68</strong>
-        <p>39 Client · 17 Prospect · 12 Pre-live · 0 Churned</p>
+        <strong style="font-size:20px">65</strong>
+        <p>Farm-side suppliers</p>
       </div>
     </div>
     <div class="info-bar" style="margin-bottom:12px">
-      <strong>TAM Coverage:</strong> 332 of ~977 wholesalers identified (34%). Whitespace remaining: ~645 accounts. 189 prospects = 66 legacy + 123 Codex-enriched (Aug 2026 batch). 129 prospects have gmv_reference=0 (Codex-enriched, no GMV estimate yet) — shown in "Unestimated" row.
+      <strong>TAM Coverage:</strong> 453 of ~977 wholesalers identified (46% — was 34%). Whitespace remaining: ~524 accounts. 307 prospects include Codex-enriched batch (Aug 2026). Many prospects have gmv_reference=0 (no GMV estimate yet) — shown in "Unestimated" row. Codex enriched 548 profiles total; 359 validated.
     </div>
     <div class="sub-tab-nav">
-      <button class="sub-tab-btn active" onclick="switchSubTab('mat-ws',this)">Wholesalers (332 · 132C + 189P + 10PL + 1Ch)</button>
-      <button class="sub-tab-btn" onclick="switchSubTab('mat-imp',this)">Importers (153)</button>
-      <button class="sub-tab-btn" onclick="switchSubTab('mat-grow',this)">Growers (68)</button>
+      <button class="sub-tab-btn active" onclick="switchSubTab('mat-ws',this)">Wholesalers (453 · 134C + 307P + 10PL + 2Ch)</button>
+      <button class="sub-tab-btn" onclick="switchSubTab('mat-imp',this)">Importers (150)</button>
+      <button class="sub-tab-btn" onclick="switchSubTab('mat-grow',this)">Growers (65)</button>
     </div>
 
     <!-- WHOLESALER MATRIX -->
@@ -397,7 +396,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
         </table>
       </div>
       <div class="info-bar" style="margin-top:10px">
-        <strong>Reading:</strong> Count + Est GMV per cell. Active = Client only. "Unestimated" row = Prospects with gmv_reference=0 (mostly Codex-enriched, no GMV reference yet). Data: 332 wholesalers from accounts_clean.json (566 total).
+        <strong>Reading:</strong> Count + Est GMV per cell. Active = Client only. "Unestimated" row = Prospects with gmv_reference=0 (mostly Codex-enriched, no GMV reference yet). Data: 453 wholesalers from accounts_clean.json (684 total). TAM coverage: 453 of ~977 = 46%.
       </div>
     </div>
 
@@ -669,19 +668,106 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
         <strong>The transition point is clear:</strong> H2 2026 fees still depend on squeezing existing volume (rate catch-up, Procurement scaling). From 2027 forward, growth depends on BASE EXPANSION — more wholesalers multiplying everything else. Without aggressive new WS acquisition, the fee engine stalls after the rate catch-up exhausts.
       </div>
     </div>
+    <!-- CODEX ECOMMERCE INTELLIGENCE -->
+    <div style="margin-top:24px">
+      <p class="eyebrow" style="color:var(--purple)">Codex Intelligence — eCommerce Landscape (Aug 2026 · 548 profiles · 359 validated WS)</p>
+      <div class="warn-bar" style="background:#faf5ff;border-color:#c4b5fd;color:#5b21b6;margin-bottom:14px">
+        <strong>Key insight:</strong> 162 of 359 validated wholesalers (45%) already sell online somewhere — on platforms we don't own. Only 39 sell bunches online (11%). Only 38 have future availability (11%). These are the structural barriers to wholesaler online selling, not willingness.
+        <br><strong>Odoo signal:</strong> 17 detected by Codex (was "8 confirmed at board") — threat is bigger than we thought.
+      </div>
+      <div class="grid3" style="margin-bottom:14px">
+        <div class="opp-summary-card">
+          <div class="label">Validated WS Profiles</div>
+          <div class="val">359</div>
+          <div class="sub">of 548 enriched profiles · 189 rejected/incomplete</div>
+        </div>
+        <div class="opp-summary-card">
+          <div class="label">Have eCommerce (any platform)</div>
+          <div class="val">162</div>
+          <div class="sub">45% of 359 validated already sell online somewhere</div>
+        </div>
+        <div class="opp-summary-card" style="background:linear-gradient(135deg,#6941c6 0%,#9333ea 100%)">
+          <div class="label">Key capability gaps</div>
+          <div class="val">39 / 38</div>
+          <div class="sub">Only 39 sell bunches · 38 have future availability (structural barriers)</div>
+        </div>
+      </div>
+
+      <div class="grid2" style="gap:14px;margin-bottom:14px">
+        <!-- eCommerce Platform Distribution -->
+        <div>
+          <p style="font-size:12px;font-weight:800;margin-bottom:8px">eCommerce Platform Distribution (162 WS with eCom)</p>
+          <div class="tableWrap" style="margin-top:0">
+            <table>
+              <thead><tr><th style="text-align:left">Platform</th><th>Count</th><th>% of eCom WS</th><th>Signal</th></tr></thead>
+              <tbody>
+                <tr><td style="font-weight:700">Authenticated (vendor unknown)</td><td>42</td><td>26%</td><td><span class="badge warn">Unknown</span></td></tr>
+                <tr><td style="font-weight:700">Custom-built</td><td>32</td><td>20%</td><td><span class="badge live">Invested</span></td></tr>
+                <tr><td style="font-weight:700">Komet Sales</td><td>26</td><td>16%</td><td><span class="badge live">On-platform</span></td></tr>
+                <tr><td style="font-weight:700">Shopify</td><td>17</td><td>10%</td><td><span class="badge warn">Off-platform</span></td></tr>
+                <tr><td style="font-weight:700">FlowerWebShop</td><td>11</td><td>7%</td><td><span class="badge warn">Competitor</span></td></tr>
+                <tr><td style="font-weight:700">FCS</td><td>7</td><td>4%</td><td><span class="badge warn">Competitor</span></td></tr>
+                <tr><td style="font-weight:700">Other (Wix, WP, etc.)</td><td>27</td><td>17%</td><td>Mixed</td></tr>
+                <tr class="subtotal-row"><td>Total with eCommerce</td><td>162</td><td>45% of 359</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Capabilities + Competitive -->
+        <div>
+          <p style="font-size:12px;font-weight:800;margin-bottom:8px">Capabilities Detected</p>
+          <div class="tableWrap" style="margin-top:0;margin-bottom:12px">
+            <table>
+              <thead><tr><th style="text-align:left">Capability</th><th>Count</th><th>% of 359 validated</th><th>Implication</th></tr></thead>
+              <tbody>
+                <tr><td>B2B gate (login required)</td><td>100</td><td class="pct-green">28%</td><td>Strong B2B intent</td></tr>
+                <tr><td>Pricing visible</td><td>27</td><td>8%</td><td>Low transparency</td></tr>
+                <tr><td style="font-weight:800;color:var(--red)">Sells bunches online</td><td style="font-weight:800">39</td><td class="pct-red">11%</td><td style="color:var(--red)">Structural barrier</td></tr>
+                <tr><td style="font-weight:800;color:var(--red)">Future availability</td><td style="font-weight:800">38</td><td class="pct-red">11%</td><td style="color:var(--red)">Structural barrier</td></tr>
+                <tr><td>Sells boxes online</td><td>27</td><td>8%</td><td>Box-only model</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p style="font-size:12px;font-weight:800;margin-bottom:8px">Competitive Signals (Codex-detected)</p>
+          <div class="tableWrap" style="margin-top:0">
+            <table>
+              <thead><tr><th style="text-align:left">Competitor</th><th>WS Count</th><th>Vs Prior Signal</th><th>Threat</th></tr></thead>
+              <tbody>
+                <tr><td style="font-weight:800;color:var(--red)">Odoo</td><td style="font-weight:900;color:var(--red)">17</td><td><span class="badge self">Was 8 at board</span></td><td style="color:var(--red);font-weight:700">HIGH — 2× confirmed</td></tr>
+                <tr><td style="font-weight:800;color:var(--gold)">DVFlora</td><td>26</td><td>Known</td><td style="color:var(--gold);font-weight:700">MEDIUM — roll-up risk</td></tr>
+                <tr><td>NetSuite</td><td>11</td><td>New signal</td><td>Enterprise WS</td></tr>
+                <tr><td>QuickBooks</td><td>6</td><td>Baseline</td><td>SMB segment</td></tr>
+                <tr><td>FreshPortal</td><td>3</td><td>New entrant</td><td>Monitoring</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-bar">
+        <strong>What this means for opportunity sizing:</strong>
+        45% of validated WS already sell online (162/359) — the TAM is not "zero digital baseline." The GTM play is platform consolidation, not education.
+        Only 39 WS (11%) can sell bunches online — this is the product gap that limits eCommerce GMV, not lack of willingness.
+        Odoo at 17 (vs 8 board estimate) is an ERP threat vector, not just a sales tool — these WS have invested in a competitor stack.
+        DVFlora at 26 is a roll-up risk: they acquire clients and pull them off-platform.
+      </div>
+    </div>
+
     <p class="footnote" style="margin-top:16px">
-      Data: opportunity_sizing_v2.md (2026-08-18). Spine: accounts_clean.json (566 accounts, 332 WS). TAM: slide1_tam_audit.md (977). Fees: Snowflake organic only, Axerrio excluded. Period L12: Aug 2025–Jul 2026. Buy ratio 0.45 (Christine measured). WS take rate 0.49% ($440.6K / $89.2M). Importer take rate 0.93% ($1,785.2K / $191.8M). Overall 0.81% ($2,300.2K / $283.7M).
+      Data: opportunity_sizing_v2.md + codex_intelligence_summary.json (2026-08-18). Spine: accounts_clean.json (684 accounts, 453 WS). TAM: slide1_tam_audit.md (977). Fees: Snowflake organic only, Axerrio excluded. Period L12: Aug 2025–Jul 2026. Buy ratio 0.45 (Christine measured). WS take rate 0.49% ($440.6K / $89.2M). Importer take rate 0.93% ($1,785.2K / $191.8M). Overall 0.81% ($2,300.2K / $283.7M). Codex enrichment: 548 profiles, 359 validated, 162 with eCom.
     </p>
   </div>
   </div>
 
 
-  <!-- TAB 6: PIPELINE (NEW) -->
+  <!-- TAB 6: PIPELINE -->
   <div id="tab-pipeline" class="tab-pane">
   <div class="tab-content">
-    <p class="eyebrow">Pipeline View · Aug 2026 · SFDC data (125 open opps) + Spine (332 wholesalers)</p>
+    <p class="eyebrow">Pipeline View · Aug 2026 · SFDC data (125 open opps) + Spine (453 wholesalers · Codex v2)</p>
     <h2>Wholesaler Pipeline</h2>
-    <p class="sub" style="margin-bottom:16px">Full funnel from whitespace to client. Acquisition (Felipe) + Upgrade pipeline (Cata). Source: sfdc_wholesaler_pipeline.json (125 open opps) + accounts_clean.json.</p>
+    <p class="sub" style="margin-bottom:16px">Full funnel from whitespace to client. Acquisition (Felipe) + Upgrade pipeline (Cata). Source: sfdc_wholesaler_pipeline.json (125 open opps) + accounts_clean.json. Codex: 548 profiles enriched, 359 validated.</p>
 
     <!-- SECTION A: ACQUISITION FUNNEL -->
     <p class="eyebrow">Section A · Acquisition Funnel — Whitespace → Client</p>
@@ -691,30 +777,30 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
         <div class="funnel-label">Whitespace</div>
         <div class="funnel-bar-wrap">
           <div class="funnel-bar" style="width:100%;background:#94a3b8">
-            <span>~645 accounts not yet identified</span>
+            <span>~524 accounts not yet identified</span>
           </div>
         </div>
-        <div class="funnel-meta">Est GMV: Unknown · ~66% of TAM</div>
+        <div class="funnel-meta">Est GMV: Unknown · ~54% of TAM (977 - 453)</div>
       </div>
       <!-- Prospect -->
       <div class="funnel-stage">
         <div class="funnel-label" style="color:var(--blue)">Prospect</div>
         <div class="funnel-bar-wrap">
-          <div class="funnel-bar" style="width:51%;background:#2457c5">
-            <span>189 prospects identified</span>
+          <div class="funnel-bar" style="width:62%;background:#2457c5">
+            <span>307 prospects identified</span>
           </div>
         </div>
-        <div class="funnel-meta">Est GMV: ~$570M (69 with est, 129 unestimated)</div>
+        <div class="funnel-meta">Est GMV: ~$570M (with estimates) · many Codex-enriched unestimated</div>
       </div>
       <!-- Pipeline / New Business -->
       <div class="funnel-stage">
-        <div class="funnel-label" style="color:var(--amber)">Pipeline (SFDC)</div>
+        <div class="funnel-label" style="color:var(--amber)">Pipeline (SFDC NB)</div>
         <div class="funnel-bar-wrap">
           <div class="funnel-bar" style="width:11%;background:#d97706">
-            <span>39 new-biz opps</span>
+            <span>26 new-biz opps · $65.8K ARR</span>
           </div>
         </div>
-        <div class="funnel-meta">26 New Business + 13 eShops · In SFDC</div>
+        <div class="funnel-meta">Discovery 4 · Selling 16 · Negotiating 2 · Closing 4 · In SFDC</div>
       </div>
       <!-- Implementation / Pre-live -->
       <div class="funnel-stage">
@@ -731,7 +817,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
         <div class="funnel-label" style="color:var(--green)">Client</div>
         <div class="funnel-bar-wrap">
           <div class="funnel-bar" style="width:36%;background:#12805c">
-            <span>132 active clients · $1,284M est GMV</span>
+            <span>134 active clients · est GMV $1.0B+</span>
           </div>
         </div>
         <div class="funnel-meta">Commercially active · Generating fees</div>
@@ -742,23 +828,23 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
     <div class="grid4" style="margin-top:16px">
       <div class="card" style="border-left:5px solid #94a3b8;text-align:center">
         <small>TAM Coverage</small>
-        <strong style="font-size:20px">34%</strong>
-        <p>332 of 977 identified</p>
+        <strong style="font-size:20px">46%</strong>
+        <p>453 of 977 identified (was 34%)</p>
       </div>
       <div class="card blueLine" style="text-align:center">
         <small>Prospect → Client Conv.</small>
-        <strong style="font-size:20px">~41%</strong>
-        <p>132 clients / 321 ever-identified</p>
+        <strong style="font-size:20px">~30%</strong>
+        <p>134 clients / 453 identified</p>
       </div>
       <div class="card" style="border-left:5px solid var(--amber);text-align:center">
-        <small>Pipeline → Implementation</small>
-        <strong style="font-size:20px">39 opps</strong>
-        <p>New Business in SFDC · H2 2026</p>
+        <small>NB Pipeline (SFDC)</small>
+        <strong style="font-size:20px">26 opps</strong>
+        <p>$65.8K ARR · New Business · H2 2026</p>
       </div>
       <div class="card okLine" style="text-align:center">
         <small>Whitespace Remaining</small>
-        <strong style="font-size:20px">~645</strong>
-        <p>304 Verified + 253 Likely + 97 External</p>
+        <strong style="font-size:20px">~524</strong>
+        <p>977 TAM minus 453 identified</p>
       </div>
     </div>
 
@@ -811,13 +897,15 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
       </table>
     </div>
 
+    <!-- SECTION B: UPGRADE PIPELINE (header update handled above) -->
+
     <!-- SECTION C: PRODUCT TIER DISTRIBUTION -->
-    <p class="eyebrow" style="margin-top:24px">Section C · Product Tier Distribution — 132 Active Clients</p>
+    <p class="eyebrow" style="margin-top:24px">Section C · Product Tier Distribution — 134 Active Clients</p>
     <div class="grid4" style="margin-bottom:12px">
       <div class="tier-card" style="border-top:4px solid #067a91">
         <span class="tc-name">Core+</span>
-        <span class="tc-count" style="color:#067a91">44</span>
-        <span class="tc-gmv" style="color:#067a91">$561M est GMV</span>
+        <span class="tc-count" style="color:#067a91">46</span>
+        <span class="tc-gmv" style="color:#067a91">$573M est GMV</span>
         <span class="tc-sub">Full visibility: online + offline, buy + sell</span>
       </div>
       <div class="tier-card" style="border-top:4px solid #2457c5">
@@ -886,157 +974,107 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
     </div>
 
     <!-- SECTION E: CODEX ENRICHMENT STATUS -->
-    <p class="eyebrow" style="margin-top:24px">Section E · Codex Enrichment Status — Spine Quality</p>
+    <p class="eyebrow" style="margin-top:24px">Section E · Codex Enrichment Status — Spine Quality (v2 · Aug 2026)</p>
     <div class="grid4" style="margin-bottom:14px">
       <div class="card blueLine" style="text-align:center">
-        <small>Profiles with enrichment_date</small>
-        <strong style="font-size:20px">217</strong>
-        <p>All WS layers, HIGH/MEDIUM confidence</p>
+        <small>Total Profiles Enriched</small>
+        <strong style="font-size:20px">548</strong>
+        <p>Across all WS layers, Aug 2026 batch</p>
       </div>
       <div class="card okLine" style="text-align:center">
-        <small>HIGH / MEDIUM Confidence</small>
-        <strong style="font-size:20px">192</strong>
-        <p>Of 332 WS in spine</p>
+        <small>Validated WS Profiles</small>
+        <strong style="font-size:20px">359</strong>
+        <p>Of 548 enriched (189 rejected/incomplete)</p>
       </div>
       <div class="card purpleLine" style="text-align:center">
         <small>With eCommerce Detected</small>
-        <strong style="font-size:20px">75</strong>
-        <p>Have external eCommerce platform detected</p>
+        <strong style="font-size:20px">162</strong>
+        <p>45% of 359 validated — sell online somewhere</p>
       </div>
       <div class="card" style="border-left:5px solid var(--amber);text-align:center">
-        <small>Remaining to Enrich</small>
-        <strong style="font-size:20px">~645</strong>
-        <p>Whitespace not yet in spine</p>
+        <small>Whitespace Remaining</small>
+        <strong style="font-size:20px">~524</strong>
+        <p>977 TAM minus 453 in spine</p>
       </div>
     </div>
     <div class="info-bar">
-      <strong>Enrichment summary:</strong> 217 accounts have enrichment_date (Aug 2026 batch). 192 validated at HIGH/MEDIUM confidence. 75 accounts have external eCommerce detected (Wix, Shopify, custom sites) — competitive signal for GTM. 129 prospects have gmv_reference=0 (recently added, no estimate yet) — shown as "Unestimated" in matrix. ~645 whitespace accounts remain to enrich in next batches.
+      <strong>Enrichment summary (Codex v2):</strong> 548 profiles enriched total. 359 validated (189 rejected/incomplete). 162 have external eCommerce (45% of validated) — Komet Sales 26, Custom-built 32, Shopify 17, FlowerWebShop 11, FCS 7, Authenticated-unknown 42. Key capability gaps: only 39 sell bunches online, only 38 have future availability — these are structural product barriers. Competitive: Odoo 17 (was 8 at board), DVFlora 26, NetSuite 11.
     </div>
     <div style="margin-top:14px">
-      <p style="font-size:12px;font-weight:800;margin-bottom:8px">Enrichment Progress</p>
+      <p style="font-size:12px;font-weight:800;margin-bottom:8px">Enrichment Progress (v2)</p>
       <div style="max-width:500px">
-        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:3px"><span>Enriched (217)</span><span>of ~977 TAM (22%)</span></div>
-        <div class="codex-bar"><div class="codex-fill" style="width:22%"></div></div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:3px;margin-top:8px"><span>HIGH/MEDIUM confidence (192)</span><span>of 332 in spine (58%)</span></div>
-        <div class="codex-bar"><div class="codex-fill" style="width:58%"></div></div>
-        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:3px;margin-top:8px"><span>With GMV estimate (203)</span><span>of 332 WS (61%)</span></div>
-        <div class="codex-bar"><div class="codex-fill" style="width:61%"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:3px"><span>Enriched (548)</span><span>of ~977 TAM (56%)</span></div>
+        <div class="codex-bar"><div class="codex-fill" style="width:56%"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:3px;margin-top:8px"><span>Validated (359)</span><span>of 548 enriched (65%)</span></div>
+        <div class="codex-bar"><div class="codex-fill" style="width:65%"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:3px;margin-top:8px"><span>With eCommerce (162)</span><span>of 359 validated (45%)</span></div>
+        <div class="codex-bar"><div class="codex-fill" style="width:45%"></div></div>
       </div>
+    </div>
+
+    <!-- SFDC PIPELINE DETAIL -->
+    <p class="eyebrow" style="margin-top:24px">Section F · SFDC Pipeline Detail</p>
+    <div class="grid3" style="margin-bottom:14px">
+      <div class="card blueLine" style="text-align:center">
+        <small>New Business (Felipe)</small>
+        <strong style="font-size:20px">26 opps</strong>
+        <p style="font-weight:800;color:var(--blue)">$65.8K ARR</p>
+        <p style="font-size:11px">Discovery 4 · Selling 16 · Neg 2 · Closing 4</p>
+      </div>
+      <div class="card goldLine" style="text-align:center">
+        <small>Existing Business (Cata)</small>
+        <strong style="font-size:20px">75 opps</strong>
+        <p style="font-weight:800;color:var(--gold)">$91.1K ARR</p>
+        <p style="font-size:11px">Discovery 49 · Selling 9 · Neg 12 · Closing 5</p>
+      </div>
+      <div class="card purpleLine" style="text-align:center">
+        <small>Renewal</small>
+        <strong style="font-size:20px">11 opps</strong>
+        <p style="font-weight:800;color:var(--purple)">$20.9K ARR</p>
+        <p style="font-size:11px">Existing clients · Rate/term renewals</p>
+      </div>
+    </div>
+
+    <!-- SECTION G: COMPETITIVE SIGNALS -->
+    <p class="eyebrow" style="margin-top:24px">Section G · Competitive Signals (Codex-Detected · Aug 2026)</p>
+    <div class="grid3" style="margin-bottom:12px">
+      <div class="card" style="border-left:4px solid var(--red)">
+        <small>Odoo Detected</small>
+        <strong style="color:var(--red)">17 WS</strong>
+        <p style="font-size:11px">Was "8 confirmed at board" — Codex found 17. Threat 2× bigger than disclosed. ERP competitor stack investing WS.</p>
+      </div>
+      <div class="card" style="border-left:4px solid var(--gold)">
+        <small>DVFlora Detected</small>
+        <strong>26 WS</strong>
+        <p style="font-size:11px">Roll-up risk: Mike's Finest (Jul'26), KD &amp; Co VA/NC (Oct'25). 26 accounts with DVFlora connection signals.</p>
+      </div>
+      <div class="card" style="border-left:4px solid var(--blue)">
+        <small>Other ERP / Systems</small>
+        <strong>NetSuite 11 · QB 6</strong>
+        <p style="font-size:11px">FreshPortal 3 (new US entrant). These WS have invested in alternative stacks — harder to convert.</p>
+      </div>
+    </div>
+    <div class="warn-bar" style="margin-bottom:14px">
+      <strong>Odoo flag for board:</strong> Presentation cited "8 confirmed Odoo losses." Codex enrichment detected 17 WS with Odoo signals — exposure materially larger than disclosed. Requires account list review and triage before next board update.
+    </div>
+
+    <!-- SECTION H: STAT CORRECTIONS -->
+    <div style="margin-bottom:14px;padding:14px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px">
+      <strong style="color:#991b1b;font-size:13px">Board stat corrections (verified · fix before next presentation):</strong>
+      <ul style="font-size:12px;margin:8px 0;color:#7f1d1d;line-height:1.9">
+        <li><strong>"12.3% online"</strong> → correct number is <strong>17.6%</strong> platform-wide (all channels incl API), or <strong>7.2% / ~$40M</strong> for wholesaler eCom+K2K (the monetizable slice)</li>
+        <li><strong>"Wholesaler monetizable online"</strong> → <strong>7.2%</strong> of WS sell GMV is eCom+K2K (not API). This is the fee-generating portion.</li>
+        <li><strong>"94% within 3 days" (Procurement)</strong> → correct: <strong>94% within 7 days</strong> (74.5% within 3 days — the stat was understated)</li>
+        <li><strong>"Core forward buying"</strong> → <strong>15.5% at 8+ days</strong>. 56.9% within 3 days. (The "40% just-in-time" number is not verifiable in Snowflake.)</li>
+        <li><strong>"Odoo losses: 8"</strong> → Codex detects <strong>17</strong> WS with Odoo signals. Full account list needed before next board.</li>
+      </ul>
     </div>
 
     <p class="footnote" style="margin-top:16px">
-      Pipeline sources: sfdc_wholesaler_pipeline.json (125 open opps, pulled 2026-08-18) · accounts_clean.json (566 accounts, 332 WS). SFDC: 75 Existing Business + 26 New Business + 13 Type=None (eShops) + 11 Renewal. EB pipeline = upgrade/expansion opps for Cata. NB pipeline = new WS acquisition for Felipe. Funnel stage definitions from SFDC StageName field. ARR = SFDC Amount field (annual recurring revenue). 20 opps have null Amount — excluded from ARR calculations.
+      Pipeline sources: sfdc_wholesaler_pipeline.json (125 open opps, pulled 2026-08-18) · accounts_clean.json (684 accounts, 453 WS) · codex_intelligence_summary.json. SFDC: 75 Existing Business / $91.1K + 26 New Business / $65.8K + 11 Renewal / $20.9K + 13 Type=None (eShops). EB pipeline = upgrade/expansion opps for Cata. NB pipeline = new WS acquisition for Felipe. ARR = SFDC Amount field. Codex enrichment: 548 profiles, 359 validated, 162 with eCom (45%). Stats source: board_stat_verification.md · Snowflake L12.
     </p>
   </div>
   </div>
-
-  <!-- TAB 6: PIPELINE & TRACKING -->
-  <div id="tab-pipeline" class="tab-pane">
-    <p class="eyebrow">Wholesaler Funnel & Tracking — 4 Dimensions</p>
-
-    <!-- ACQUIRE -->
-    <section style="margin:16px 0">
-      <h3 style="color:var(--blue)">1. ACQUIRE — Grow the Base (Felipe + Christine)</h3>
-      <div style="background:#f0f6ff;border-radius:8px;padding:16px;margin:8px 0">
-        <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;font-size:12px;font-weight:700">
-          <div style="background:#e2e8f0;padding:8px 12px;border-radius:6px;text-align:center;flex:6">
-            <div style="font-size:18px">~642</div>Whitespace
-          </div>
-          <div style="color:var(--muted)">→</div>
-          <div style="background:#bfdbfe;padding:8px 12px;border-radius:6px;text-align:center;flex:2">
-            <div style="font-size:18px">189</div>Prospect
-          </div>
-          <div style="color:var(--muted)">→</div>
-          <div style="background:#93c5fd;padding:8px 12px;border-radius:6px;text-align:center;flex:0.3;color:#1e3a5f">
-            <div style="font-size:18px">26</div>Pipeline
-          </div>
-          <div style="color:var(--muted)">→</div>
-          <div style="background:#60a5fa;padding:8px 12px;border-radius:6px;text-align:center;flex:0.1;color:#fff">
-            <div style="font-size:18px">10</div>Impl
-          </div>
-          <div style="color:var(--muted)">→</div>
-          <div style="background:#2563eb;padding:8px 12px;border-radius:6px;text-align:center;flex:1.3;color:#fff">
-            <div style="font-size:18px">134</div>Client
-          </div>
-        </div>
-        <p style="font-size:11px;color:var(--muted);margin-top:8px">TAM: ~977. Spine: 601 accounts. Codex enriched: 321 profiles (218 validated, 98 with eCommerce). ~484 whitespace remaining.</p>
-      </div>
-    </section>
-
-    <!-- UPGRADE -->
-    <section style="margin:16px 0">
-      <h3 style="color:var(--gold)">2. UPGRADE — Increase Tier (Cata)</h3>
-      <p class="small">75 Existing Business opps in SFDC — $91K pipeline. 88 upgrade candidates (41 K2K + 4 Proc + 43 eSuite).</p>
-      <table style="width:100%;font-size:12px;margin-top:8px">
-        <thead><tr style="background:#f8fafc"><th style="text-align:left">Current Tier</th><th style="text-align:right">Accts with opp</th><th style="text-align:left">Being pitched</th></tr></thead>
-        <tbody>
-          <tr><td>Core+</td><td style="text-align:right">27</td><td>eShops, Procurement, Payments</td></tr>
-          <tr><td>eSuite</td><td style="text-align:right">23</td><td>Core migrations ("Sunset Project")</td></tr>
-          <tr><td>K2K</td><td style="text-align:right">14</td><td>Core Multilocation, eSuite Wholesaler</td></tr>
-          <tr><td>Procurement</td><td style="text-align:right">3</td><td>Core, eSuite Wholesaler</td></tr>
-        </tbody>
-      </table>
-      <div class="info-bar" style="margin-top:8px">Each K2K→Core upgrade = ~$3-6K fees/yr. eSuite→Core = ~$2-4K fees/yr. More visibility = more GMV = more fees.</div>
-    </section>
-
-    <!-- ACTIVATE -->
-    <section style="margin:16px 0">
-      <h3 style="color:var(--green)">3. ACTIVATE — Increase Online % (TX Team: Facu/Cata/CS)</h3>
-      <div class="grid3" style="margin:8px 0">
-        <div class="card"><small>WS Online Sell %</small><strong style="font-size:22px">7.2%</strong><p style="font-size:11px;color:var(--muted)">$40M eCom+K2K of $552M. Excl API. Target: 15%+</p></div>
-        <div class="card"><small>WS Online Buy %</small><strong style="font-size:22px">15.8%</strong><p style="font-size:11px;color:var(--muted)">$47M of $296M. Artifact: real ~11%. Target: 25%+</p></div>
-        <div class="card"><small>Procurement Monthly</small><strong style="font-size:22px">$2-4M</strong><p style="font-size:11px;color:var(--muted)">Peak $4.1M May'26. Target: $5M+</p></div>
-      </div>
-      <div class="grid2" style="margin:8px 0">
-        <div class="card"><small>eShop Buyers (monthly)</small><strong>~1,400</strong><p style="font-size:11px;color:var(--green)">↑ +22% in 24mo</p></div>
-        <div class="card"><small>API Buyers (monthly)</small><strong>~930</strong><p style="font-size:11px;color:var(--red)">↓ -47% in 14mo — DECLINING</p></div>
-      </div>
-      <div class="card" style="border-left:4px solid var(--purple);margin:8px 0">
-        <strong>The buying lead time stat (VERIFIED)</strong><br>
-        <span style="font-size:13px">
-          Procurement: <strong>94% of buying within 7 days</strong> (74.5% within 3 days). Almost all spot/short-term.<br>
-          Core (wholesaler offline): <strong>15.5% is forward buying (8+ days)</strong>. 56.9% within 3 days.<br>
-          <strong>Insight:</strong> 62.8% of Procurement items have a prebook_creation_date — they ARE planned, but for near-term delivery. The unlock: if Procurement captures forward buying (8+ days), it opens a massive GMV pool that's currently 100% offline.
-        </span>
-      </div>
-    </section>
-
-    <!-- MONETIZE -->
-    <section style="margin:16px 0">
-      <h3 style="color:var(--purple)">4. MONETIZE — Capture Fees</h3>
-      <div class="grid2" style="margin:8px 0">
-        <div class="card"><small>Total TX Fees L12</small><strong style="font-size:22px">$2.3M</strong><p style="font-size:11px;color:var(--green)">+36.8% YoY (organic, ex-Axerrio)</p></div>
-        <div class="card"><small>Take Rate</small><strong style="font-size:22px">0.81%</strong><p style="font-size:11px;color:var(--gold)">Up from 0.68% (+19bps). Rate catches EXHAUSTING.</p></div>
-      </div>
-      <div class="card" style="border-left:4px solid var(--red);margin:8px 0">
-        <strong>API at $0 — $105M unmonetized</strong><br>
-        <span style="font-size:13px">Top 3: Rosaprima $50.3M @ 0% | Mayesh $45.2M @ 0% | KBC $4.3M @ 0%<br>
-        Total top 10 API: $104.8M generating $0 fees. Contractual — not billing failures.</span>
-      </div>
-    </section>
-
-    <!-- COMPETITIVE -->
-    <section style="margin:16px 0">
-      <h3>Competitive Signals</h3>
-      <div class="grid3" style="margin:8px 0">
-        <div class="card" style="border-left:4px solid var(--red)"><small>Odoo Losses</small><strong>8 confirmed</strong><p style="font-size:11px">Board-confirmed Aug 19. Need account list.</p></div>
-        <div class="card" style="border-left:4px solid var(--gold)"><small>DVFlora Acquisitions</small><strong>2 in 2025-26</strong><p style="font-size:11px">Mike's Finest (Jul'26), KD & Co VA/NC (Oct'25)</p></div>
-        <div class="card" style="border-left:4px solid var(--blue)"><small>Codex Enrichment</small><strong>321 profiles</strong><p style="font-size:11px">218 validated. 98 with eCommerce. 3 DVFlora detected.</p></div>
-      </div>
-    </section>
-
-    <!-- STAT CORRECTIONS -->
-    <section style="margin:16px 0;padding:14px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px">
-      <strong style="color:#991b1b">Board stat corrections (fix before next presentation):</strong>
-      <ul style="font-size:12px;margin:8px 0;color:#991b1b">
-        <li><strong>"12.3% online"</strong> → correct number is <strong>17.6%</strong> platform-wide, or <strong>7.2%</strong> for wholesaler eCom+K2K (the monetizable slice)</li>
-        <li><strong>"94% within 3 days"</strong> → correct: <strong>94% within 7 days</strong> (74.5% within 3 days)</li>
-        <li><strong>"40% just-in-time on Core"</strong> → not verifiable in Snowflake. Actual: 56.9% within 3 days, 15.5% forward (8+ days)</li>
-      </ul>
-    </section>
-
-    <p class="footnote">Data: SFDC pipeline pulled Aug 24. Spine: 601 accounts. Stats verified against Snowflake L12. See board_stat_verification.md for full methodology.</p>
-  </div><!-- /tab-pipeline -->
 
 </div><!-- /tab-shell -->
 </main>
@@ -1099,30 +1137,30 @@ const FEES_PRIOR = {
   Grower: 1143+2028+2800+1614+1162+1684+2585+1791+3690+3084+1624+1561,
 };
 
-// WHOLESALER MATRIX — v4 updated from accounts_clean.json (332 WS: 132C, 189P, 10PL, 1Ch)
-// Computed from Python analysis above
+// WHOLESALER MATRIX — v5 updated from codex_intelligence_summary.json (453 WS: 134C, 307P, 10PL, 2Ch)
+// Source: codex_intelligence_summary.json wholesaler_matrix, 2026-08-18
 const MATRIX_DATA = {
   bands: ["≥$10M","$2–10M","$500K–2M","<$500K","Unestimated"],
   active: {
-    "≥$10M":    {corePlus:{c:4,g:444300000}, eSuite:{c:11,g:195000000}, k2k:{c:5,g:222900000}, proc:{c:0,g:0}},
-    "$2–10M":   {corePlus:{c:22,g:102500000}, eSuite:{c:24,g:112000000}, k2k:{c:33,g:160500000}, proc:{c:4,g:19500000}},
-    "$500K–2M": {corePlus:{c:9,g:12600000},  eSuite:{c:6,g:8000000},   k2k:{c:3,g:4200000},    proc:{c:0,g:0}},
-    "<$500K":   {corePlus:{c:9,g:1900000},   eSuite:{c:2,g:215000},    k2k:{c:0,g:0},           proc:{c:0,g:0}},
+    "≥$10M":    {corePlus:{c:5,g:455675402}, eSuite:{c:11,g:195000000}, k2k:{c:5,g:222900000}, proc:{c:0,g:0}},
+    "$2–10M":   {corePlus:{c:22,g:102481698}, eSuite:{c:24,g:112000000}, k2k:{c:33,g:160500000}, proc:{c:4,g:19500000}},
+    "$500K–2M": {corePlus:{c:9,g:12589301},  eSuite:{c:6,g:8000000},   k2k:{c:3,g:4200000},    proc:{c:0,g:0}},
+    "<$500K":   {corePlus:{c:10,g:2034432},  eSuite:{c:2,g:217423},    k2k:{c:0,g:0},           proc:{c:0,g:0}},
     "Unestimated":{corePlus:{c:0,g:0},       eSuite:{c:0,g:0},         k2k:{c:0,g:0},           proc:{c:0,g:0}},
   },
   prospect: {
     "≥$10M":    {c:24,g:411700000},
     "$2–10M":   {c:36,g:154100000},
-    "$500K–2M": {c:4,g:3800000},
-    "<$500K":   {c:5,g:500000},
-    "Unestimated":{c:130,g:0},
+    "$500K–2M": {c:4,g:3826840},
+    "<$500K":   {c:5,g:549922},
+    "Unestimated":{c:248,g:0},
   },
   churned: {
     "≥$10M":    {c:0,g:0},
-    "$2–10M":   {c:1,g:0},
+    "$2–10M":   {c:1,g:8000000},
     "$500K–2M": {c:0,g:0},
     "<$500K":   {c:0,g:0},
-    "Unestimated":{c:0,g:0},
+    "Unestimated":{c:1,g:0},
   },
 };
 
@@ -1545,10 +1583,10 @@ function buildMatrix(){
   html+=totRow;
   document.getElementById('matrixBody').innerHTML=html;
   document.getElementById('matrixFootnote').innerHTML=`
-    Source: accounts_clean.json (566 accounts, 2026-08-18). Wholesaler: 332 total (132 Client, 189 Prospect, 10 Pre-live, 1 Churned).
-    "Unestimated" = Prospects with gmv_reference=0 — mostly Codex-enriched Aug 2026 batch, no GMV estimate yet.
-    Importer: 153 total (132 Client, 14 Prospect, 7 Pre-live). Grower: 68 total (39 Client, 17 Prospect, 12 Pre-live).
-    TAM coverage: 332 WS of ~977 identified (34%). Whitespace: ~645 remaining. Generated: 2026-08-18.`;
+    Source: codex_intelligence_summary.json + accounts_clean.json (684 accounts, 2026-08-18). Wholesaler: 453 total (134 Client, 307 Prospect, 10 Pre-live, 2 Churned).
+    "Unestimated" = Prospects with gmv_reference=0 — Codex-enriched Aug 2026 batch, no GMV estimate yet.
+    Importer: 150 total. Grower: 65 total.
+    TAM coverage: 453 WS of ~977 identified (46% — was 34%). Whitespace: ~524 remaining. Codex enriched: 548 profiles, 359 validated. Generated: 2026-08-18.`;
 }
 
 function buildImpMatrix(){
