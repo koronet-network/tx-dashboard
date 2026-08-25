@@ -172,7 +172,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
   <div>
     <p class="eyebrow">TX Revenue OS · Board Opportunity Dashboard</p>
     <h1>Board Opportunity Dashboard <span style="font-size:18px;color:var(--muted);font-weight:400">v4</span></h1>
-    <p class="sub">L12 macro TX performance · Ecosystem layers · Deep dives · Wholesaler matrix (453 accounts · 46% TAM) · Opportunity sizing · Pipeline view. Organic Snowflake data only — Axerrio reported separately.</p>
+    <p class="sub">L12 macro TX performance · Ecosystem layers · Deep dives · Wholesaler matrix (546 accounts · 56% TAM) · Opportunity sizing · Pipeline view. Organic Snowflake data only — Axerrio reported separately.</p>
   </div>
   <div style="text-align:right;flex-shrink:0">
     <span class="badge live">LIVE DATA</span>
@@ -271,10 +271,10 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
     <h2>Layer-by-Layer Performance</h2>
     <p class="sub">Sell-side GMV and fees by industry layer. Buy-side GMV via Procurement. Channel definitions per channels.json (Sofia Pardo).</p>
     <div class="grid4" style="margin:14px 0">
-      <div class="card okLine" style="text-align:center"><small>Wholesalers in Spine</small><strong style="font-size:22px">453</strong><p>134 Client · 307 Prospect · 10 Pre-live · 2 Churned</p></div>
+      <div class="card okLine" style="text-align:center"><small>Wholesalers in Spine</small><strong style="font-size:22px">546</strong><p>134 Client · 400 Prospect · 10 Pre-live · 2 Churned</p></div>
       <div class="card blueLine" style="text-align:center"><small>Importers in Spine</small><strong style="font-size:22px">150</strong><p>Floral importers across layers</p></div>
       <div class="card goldLine" style="text-align:center"><small>Growers in Spine</small><strong style="font-size:22px">65</strong><p>Farm-side suppliers</p></div>
-      <div class="card purpleLine" style="text-align:center"><small>Total Spine (accounts_clean)</small><strong style="font-size:22px">684</strong><p>WS TAM coverage: 46% (453/977)</p></div>
+      <div class="card purpleLine" style="text-align:center"><small>Total Spine (accounts_clean)</small><strong style="font-size:22px">684</strong><p>WS TAM coverage: 56% (546/977)</p></div>
     </div>
     <div class="toggle-bar">
       <span style="font-size:12px;font-weight:700;color:var(--muted)">FILTER:</span>
@@ -348,13 +348,13 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
   <div class="tab-content">
     <p class="eyebrow">Account Potential Matrix · All Layers · accounts_clean.json (684 accounts) · Codex v2 Aug 2026</p>
     <h2>Account Potential Matrix</h2>
-    <p class="sub">Product tier × GMV band × account class, by ecosystem layer. Source: accounts_clean.json (684 total accounts, 2026-08-18). TAM coverage: 453 wholesalers of ~977 identified (46%).</p>
+    <p class="sub">Product tier × GMV band × account class, by ecosystem layer. Source: accounts_clean.json (684 total accounts, 2026-08-18). TAM coverage: 546 wholesalers of ~977 identified (56%).</p>
     <div class="grid3" style="margin:12px 0">
       <div class="card okLine" style="text-align:center">
         <small>Wholesalers</small>
-        <strong style="font-size:20px">453</strong>
-        <p>134 Client · 307 Prospect · 10 Pre-live · 2 Churned</p>
-        <p style="margin-top:4px;font-size:11px;color:var(--green)">+121 Codex v2 batch added vs prior spine</p>
+        <strong style="font-size:20px">546</strong>
+        <p>134 Client · 400 Prospect · 10 Pre-live · 2 Churned</p>
+        <p style="margin-top:4px;font-size:11px;color:var(--green)">+96 buyer proxy prospects added (importer buyer data)</p>
       </div>
       <div class="card blueLine" style="text-align:center">
         <small>Importers</small>
@@ -368,10 +368,10 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
       </div>
     </div>
     <div class="info-bar" style="margin-bottom:12px">
-      <strong>TAM Coverage:</strong> 453 of ~977 wholesalers identified (46% — was 34%). Whitespace remaining: ~524 accounts. 307 prospects include Codex-enriched batch (Aug 2026). Many prospects have gmv_reference=0 (no GMV estimate yet) — shown in "Unestimated" row. Codex enriched 548 profiles total; 359 validated.
+      <strong>TAM Coverage:</strong> 546 of ~977 wholesalers identified (56% — was 46%). Whitespace remaining: ~431 accounts. 400 prospects include Codex-enriched batch + 96 new buyer proxy prospects (from Snowflake importer buyer data, Aug 2026). Many prospects have gmv_reference=0 (no GMV estimate yet) — shown in "Unestimated" row. Codex enriched 548 profiles total; 359 validated.
     </div>
     <div class="sub-tab-nav">
-      <button class="sub-tab-btn active" onclick="switchSubTab('mat-ws',this)">Wholesalers (453 · 134C + 307P + 10PL + 2Ch)</button>
+      <button class="sub-tab-btn active" onclick="switchSubTab('mat-ws',this)">Wholesalers (546 · 134C + 400P + 10PL + 2Ch)</button>
       <button class="sub-tab-btn" onclick="switchSubTab('mat-imp',this)">Importers (150)</button>
       <button class="sub-tab-btn" onclick="switchSubTab('mat-grow',this)">Growers (65)</button>
     </div>
@@ -396,7 +396,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
         </table>
       </div>
       <div class="info-bar" style="margin-top:10px">
-        <strong>Reading:</strong> Count + Est GMV per cell. Active = Client only. "Unestimated" row = Prospects with gmv_reference=0 (mostly Codex-enriched, no GMV reference yet). Data: 453 wholesalers from accounts_clean.json (684 total). TAM coverage: 453 of ~977 = 46%.
+        <strong>Reading:</strong> Count + Est GMV per cell. Active = Client only. "Unestimated" row = Prospects with gmv_reference=0 (mostly Codex-enriched, no GMV reference yet). Data: 546 wholesalers from accounts_clean.json (684 total). TAM coverage: 546 of ~977 = 56%.
       </div>
     </div>
 
@@ -477,19 +477,19 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
           </tr>
           <tr>
             <td style="font-weight:800"><span style="color:#667085">C: Prospects + Pre-live</span></td>
-            <td>199</td><td>~$570M (est)</td><td>~$257M (est)</td>
-            <td style="white-space:normal;max-width:220px;font-size:12px">NOTHING (129 unestimated)</td>
+            <td>410</td><td>~$810M (est)</td><td>~$365M (est)</td>
+            <td style="white-space:normal;max-width:220px;font-size:12px">NOTHING (many unestimated · +96 buyer proxy added)</td>
             <td><span class="badge self">LOW</span></td>
           </tr>
           <tr>
             <td style="font-weight:800"><span style="color:#667085">D: Whitespace</span></td>
-            <td>~645</td><td>Unknown</td><td>Unknown</td>
+            <td>~431</td><td>Unknown</td><td>Unknown</td>
             <td style="white-space:normal;max-width:220px;font-size:12px">NOTHING</td>
             <td><span class="badge self">LOW</span></td>
           </tr>
           <tr class="subtotal-row">
             <td style="font-weight:900">TOTAL known (A+B+C)</td>
-            <td>331</td><td style="font-weight:900">$1,834M+</td><td style="font-weight:900">$826M+</td><td></td><td></td>
+            <td>546</td><td style="font-weight:900">$2,074M+</td><td style="font-weight:900">$934M+</td><td></td><td></td>
           </tr>
           <tr class="total-row">
             <td style="text-align:left;font-weight:900">TOTAL with whitespace</td>
@@ -502,7 +502,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
       <strong>Layer B Artifact (critical):</strong> Layer B accounts show "94–100% buy digital" — artifact. We only see what passes through Koronet. Real buy digital % for Layer B is ~11% (Core+ measured rate). The true opportunity is bigger, not smaller.<br>
       <strong>Verified stat:</strong> Platform online = 17.6% (NOT 12.3%). Wholesaler eCom+K2K (monetizable) = 7.2% / ~$40M. Procurement: 94% within 7 days (NOT 3 days).<br>
       <strong>Buy GMV = Est Sell × 0.45</strong> — Christine's measured ratio from Core+ actuals.<br>
-      <strong>Spine update (Aug 2026):</strong> accounts_clean.json now has 332 wholesalers (was 209 in v3). +123 Codex-enriched prospects added. 129 of these have no GMV estimate. Prospect+Pre-live est GMV = ~$570M for those with estimates.
+      <strong>Spine update (Aug 2026):</strong> accounts_clean.json now has 546 wholesalers (was 453 in v4). +96 buyer proxy prospects added from Snowflake importer buyer data. Many have no GMV estimate. Prospect+Pre-live est GMV = ~$570M for those with estimates.
     </div>
 
     <!-- COMBINED SENSITIVITY -->
@@ -544,7 +544,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
           <tr>
             <td style="font-weight:900;color:#067a91;font-size:15px">1</td>
             <td style="font-weight:800;max-width:200px;white-space:normal"><span style="color:#067a91">ADD MORE WHOLESALERS</span><br><span style="font-size:10px;color:var(--muted)">THE MULTIPLIER</span></td>
-            <td>132 active · 34% penetration · 977 TAM · 189 prospects identified</td>
+            <td>132 active · 34% penetration · 977 TAM · 400 prospects identified</td>
             <td class="pct-green" style="font-weight:800">+$682K per 100 new WS</td>
             <td><strong>Felipe</strong> (acquire) + <strong>Christine</strong> (onboard)</td>
             <td style="color:var(--gold);font-weight:700">H2/2027+</td>
@@ -600,7 +600,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
           <div class="opp-num" style="background:#067a91">1</div>
           <div>
             <div class="opp-toggle-title">ADD MORE WHOLESALERS — The Multiplier</div>
-            <div class="opp-toggle-sub">977 parent company TAM · 132 active clients (34% penetration) · 189 prospects identified · 39 in SFDC new-biz pipeline · Owner: Felipe + Christine</div>
+            <div class="opp-toggle-sub">977 parent company TAM · 132 active clients (34% penetration) · 400 prospects identified · 39 in SFDC new-biz pipeline · Owner: Felipe + Christine</div>
           </div>
         </div>
         <div class="opp-toggle-right">
@@ -612,9 +612,9 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
         <div class="opp-kpi-grid">
           <div class="opp-kpi"><span class="kl">TAM</span><span class="kv">977</span><span class="ks">Parent companies, deduplicated</span></div>
           <div class="opp-kpi"><span class="kl">Active Clients</span><span class="kv">132</span><span class="ks">Commercially active (spine v4)</span></div>
-          <div class="opp-kpi"><span class="kl">Identified (spine)</span><span class="kv">332</span><span class="ks">34% of TAM, 189 prospects</span></div>
+          <div class="opp-kpi"><span class="kl">Identified (spine)</span><span class="kv">546</span><span class="ks">56% of TAM, 400 prospects</span></div>
           <div class="opp-kpi"><span class="kl">SFDC New Biz Pipeline</span><span class="kv">39</span><span class="ks">26 New Biz + 13 eShops opps</span></div>
-          <div class="opp-kpi"><span class="kl">Penetration</span><span class="kv">14–34%</span><span class="ks">132/977 active to 332/977 identified</span></div>
+          <div class="opp-kpi"><span class="kl">Penetration</span><span class="kv">14–56%</span><span class="ks">132/977 active to 546/977 identified</span></div>
         </div>
         <div class="info-bar" style="margin-bottom:12px">
           <strong>Why this is Opp 1:</strong> Each new wholesaler brings buying GMV (avg $2–11M/yr) → importer sell-side fees. Brings selling GMV → WS sell-side fees. Creates connection opportunities. Expands the measurable universe (Layers C/D → A/B). Fee generator across ALL channels (eCommerce, K2K, API, Procurement).
@@ -756,7 +756,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
     </div>
 
     <p class="footnote" style="margin-top:16px">
-      Data: opportunity_sizing_v2.md + codex_intelligence_summary.json (2026-08-18). Spine: accounts_clean.json (684 accounts, 453 WS). TAM: slide1_tam_audit.md (977). Fees: Snowflake organic only, Axerrio excluded. Period L12: Aug 2025–Jul 2026. Buy ratio 0.45 (Christine measured). WS take rate 0.49% ($440.6K / $89.2M). Importer take rate 0.93% ($1,785.2K / $191.8M). Overall 0.81% ($2,300.2K / $283.7M). Codex enrichment: 548 profiles, 359 validated, 162 with eCom.
+      Data: opportunity_sizing_v2.md + codex_intelligence_summary.json (2026-08-18). Spine: accounts_clean.json (684 accounts, 546 WS). TAM: slide1_tam_audit.md (977). Fees: Snowflake organic only, Axerrio excluded. Period L12: Aug 2025–Jul 2026. Buy ratio 0.45 (Christine measured). WS take rate 0.49% ($440.6K / $89.2M). Importer take rate 0.93% ($1,785.2K / $191.8M). Overall 0.81% ($2,300.2K / $283.7M). Codex enrichment: 548 profiles, 359 validated, 162 with eCom. Spine update Aug 2026: +96 buyer proxy prospects from Snowflake importer buyer data.
     </p>
   </div>
   </div>
@@ -765,9 +765,9 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
   <!-- TAB 6: PIPELINE -->
   <div id="tab-pipeline" class="tab-pane">
   <div class="tab-content">
-    <p class="eyebrow">Pipeline View · Aug 2026 · SFDC data (125 open opps) + Spine (453 wholesalers · Codex v2)</p>
+    <p class="eyebrow">Pipeline View · Aug 2026 · SFDC data (125 open opps) + Spine (546 wholesalers · Codex v2)</p>
     <h2>Wholesaler Pipeline</h2>
-    <p class="sub" style="margin-bottom:16px">Full funnel from whitespace to client. Acquisition (Felipe) + Upgrade pipeline (Cata). Source: sfdc_wholesaler_pipeline.json (125 open opps) + accounts_clean.json. Codex: 548 profiles enriched, 359 validated.</p>
+    <p class="sub" style="margin-bottom:16px">Full funnel from whitespace to client. Acquisition (Felipe) + Upgrade pipeline (Cata). Source: sfdc_wholesaler_pipeline.json (125 open opps) + accounts_clean.json. Codex: 548 profiles enriched, 359 validated. +96 buyer proxy prospects added from Snowflake importer buyer data.</p>
 
     <!-- SECTION A: ACQUISITION FUNNEL -->
     <p class="eyebrow">Section A · Acquisition Funnel — Whitespace → Client</p>
@@ -777,20 +777,20 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
         <div class="funnel-label">Whitespace</div>
         <div class="funnel-bar-wrap">
           <div class="funnel-bar" style="width:100%;background:#94a3b8">
-            <span>~524 accounts not yet identified</span>
+            <span>~431 accounts not yet identified</span>
           </div>
         </div>
-        <div class="funnel-meta">Est GMV: Unknown · ~54% of TAM (977 - 453)</div>
+        <div class="funnel-meta">Est GMV: Unknown · ~44% of TAM (977 - 546)</div>
       </div>
       <!-- Prospect -->
       <div class="funnel-stage">
         <div class="funnel-label" style="color:var(--blue)">Prospect</div>
         <div class="funnel-bar-wrap">
-          <div class="funnel-bar" style="width:62%;background:#2457c5">
-            <span>307 prospects identified</span>
+          <div class="funnel-bar" style="width:73%;background:#2457c5">
+            <span>400 prospects identified</span>
           </div>
         </div>
-        <div class="funnel-meta">Est GMV: ~$570M (with estimates) · many Codex-enriched unestimated</div>
+        <div class="funnel-meta">Est GMV: ~$810M (with estimates) · includes 96 buyer proxy from importer data</div>
       </div>
       <!-- Pipeline / New Business -->
       <div class="funnel-stage">
@@ -828,13 +828,13 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
     <div class="grid4" style="margin-top:16px">
       <div class="card" style="border-left:5px solid #94a3b8;text-align:center">
         <small>TAM Coverage</small>
-        <strong style="font-size:20px">46%</strong>
-        <p>453 of 977 identified (was 34%)</p>
+        <strong style="font-size:20px">56%</strong>
+        <p>546 of 977 identified (was 46%)</p>
       </div>
       <div class="card blueLine" style="text-align:center">
         <small>Prospect → Client Conv.</small>
-        <strong style="font-size:20px">~30%</strong>
-        <p>134 clients / 453 identified</p>
+        <strong style="font-size:20px">~25%</strong>
+        <p>134 clients / 546 identified</p>
       </div>
       <div class="card" style="border-left:5px solid var(--amber);text-align:center">
         <small>NB Pipeline (SFDC)</small>
@@ -843,8 +843,8 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
       </div>
       <div class="card okLine" style="text-align:center">
         <small>Whitespace Remaining</small>
-        <strong style="font-size:20px">~524</strong>
-        <p>977 TAM minus 453 identified</p>
+        <strong style="font-size:20px">~431</strong>
+        <p>977 TAM minus 546 identified</p>
       </div>
     </div>
 
@@ -993,8 +993,8 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
       </div>
       <div class="card" style="border-left:5px solid var(--amber);text-align:center">
         <small>Whitespace Remaining</small>
-        <strong style="font-size:20px">~524</strong>
-        <p>977 TAM minus 453 in spine</p>
+        <strong style="font-size:20px">~431</strong>
+        <p>977 TAM minus 546 in spine</p>
       </div>
     </div>
     <div class="info-bar">
@@ -1071,7 +1071,7 @@ tr.highlight-row td{background:#f0fdf4!important;font-weight:700}
     </div>
 
     <p class="footnote" style="margin-top:16px">
-      Pipeline sources: sfdc_wholesaler_pipeline.json (125 open opps, pulled 2026-08-18) · accounts_clean.json (684 accounts, 453 WS) · codex_intelligence_summary.json. SFDC: 75 Existing Business / $91.1K + 26 New Business / $65.8K + 11 Renewal / $20.9K + 13 Type=None (eShops). EB pipeline = upgrade/expansion opps for Cata. NB pipeline = new WS acquisition for Felipe. ARR = SFDC Amount field. Codex enrichment: 548 profiles, 359 validated, 162 with eCom (45%). Stats source: board_stat_verification.md · Snowflake L12.
+      Pipeline sources: sfdc_wholesaler_pipeline.json (125 open opps, pulled 2026-08-18) · accounts_clean.json (684 accounts, 546 WS) · codex_intelligence_summary.json. SFDC: 75 Existing Business / $91.1K + 26 New Business / $65.8K + 11 Renewal / $20.9K + 13 Type=None (eShops). EB pipeline = upgrade/expansion opps for Cata. NB pipeline = new WS acquisition for Felipe. ARR = SFDC Amount field. Codex enrichment: 548 profiles, 359 validated, 162 with eCom (45%). +96 buyer proxy prospects added from Snowflake importer buyer data (Aug 2026). Stats source: board_stat_verification.md · Snowflake L12.
     </p>
   </div>
   </div>
@@ -1137,7 +1137,7 @@ const FEES_PRIOR = {
   Grower: 1143+2028+2800+1614+1162+1684+2585+1791+3690+3084+1624+1561,
 };
 
-// WHOLESALER MATRIX — v5 updated from codex_intelligence_summary.json (453 WS: 134C, 307P, 10PL, 2Ch)
+// WHOLESALER MATRIX — v5 updated from codex_intelligence_summary.json (546 WS: 134C, 400P, 10PL, 2Ch)
 // Source: codex_intelligence_summary.json wholesaler_matrix, 2026-08-18
 const MATRIX_DATA = {
   bands: ["≥$10M","$2–10M","$500K–2M","<$500K","Unestimated"],
@@ -1153,7 +1153,7 @@ const MATRIX_DATA = {
     "$2–10M":   {c:36,g:154100000},
     "$500K–2M": {c:4,g:3826840},
     "<$500K":   {c:5,g:549922},
-    "Unestimated":{c:248,g:0},
+    "Unestimated":{c:331,g:0},
   },
   churned: {
     "≥$10M":    {c:0,g:0},
@@ -1583,10 +1583,10 @@ function buildMatrix(){
   html+=totRow;
   document.getElementById('matrixBody').innerHTML=html;
   document.getElementById('matrixFootnote').innerHTML=`
-    Source: codex_intelligence_summary.json + accounts_clean.json (684 accounts, 2026-08-18). Wholesaler: 453 total (134 Client, 307 Prospect, 10 Pre-live, 2 Churned).
+    Source: codex_intelligence_summary.json + accounts_clean.json (684 accounts, 2026-08-18). Wholesaler: 546 total (134 Client, 400 Prospect, 10 Pre-live, 2 Churned). +96 buyer proxy prospects from Snowflake importer buyer data.
     "Unestimated" = Prospects with gmv_reference=0 — Codex-enriched Aug 2026 batch, no GMV estimate yet.
     Importer: 150 total. Grower: 65 total.
-    TAM coverage: 453 WS of ~977 identified (46% — was 34%). Whitespace: ~524 remaining. Codex enriched: 548 profiles, 359 validated. Generated: 2026-08-18.`;
+    TAM coverage: 546 WS of ~977 identified (56% — was 46%). Whitespace: ~431 remaining. Codex enriched: 548 profiles, 359 validated. Generated: 2026-08-18.`;
 }
 
 function buildImpMatrix(){
